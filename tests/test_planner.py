@@ -11,11 +11,11 @@ def test_days_left_counts_days_until_due():
     # Act
     result = days_left(due, today)
     # Assert
-    assert result == 4
+    assert result == 3
 
 # Now write the tests below. Use the same three steps: Arrange, Act, Assert.
 # TODO 1: days_left is negative when the task is overdue.
-def test_days_left_counts_days_until_due():
+def test_days_left_negative_when_overdue():
     today = date(2026, 10, 19)
     due = date(2026, 10, 18)
     assert days_left(due,today) < 0
